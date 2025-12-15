@@ -4,7 +4,9 @@
   "description": "My first rpg game.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/MagEk1511/rpg-game/issues"
   },
-  "homepage": "https://github.com/MagEk1511/rpg-game#readme"
+  "homepage": "https://github.com/MagEk1511/rpg-game#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "eslint": "^9.39.2"
+  },
+  "dependencies": {
+    "core-js": "^3.47.0"
+  }
 }
