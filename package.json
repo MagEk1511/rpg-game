@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d dist",
+    "build": "webpack --config webpack.config.js --mode production",
+    "dev": "webpack --mode development --watch",
+    "serve": "http-server dist -p 8080 -o",
+    "start": "webpack serve --config webpack.config.js --mode development --open",
     "lint": "eslint ."
   },
   "repository": {
@@ -25,7 +28,15 @@
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
     "@babel/preset-env": "^7.28.5",
-    "eslint": "^9.39.2"
+    "css-loader": "^7.1.2",
+    "eslint": "^9.39.2",
+    "html-webpack-plugin": "^5.6.5",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.9.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.104.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
     "core-js": "^3.47.0"
