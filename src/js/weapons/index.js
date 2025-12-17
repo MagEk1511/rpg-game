@@ -1,0 +1,9 @@
+export { default as Weapon } from './Weapon.js';
+export { default as Arm } from './Arm.js';
+export { default as Bow } from './Bow.js';
+export { default as Sword } from './Sword.js';
+export { default as Knife } from './Knife.js';
+export { default as Staff } from './Staff.js';
+export { default as LongBow } from './LongBow.js';
+export { default as Axe } from './Axe.js';
+export { default as StormStaff } from './StormStaff.js';
